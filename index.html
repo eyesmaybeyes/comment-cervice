@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Сервис комментариев со спам фильтром</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <h1>Сервис комментариев со спам фильтром</h1>
+        <section class="info">
+            <div class="info__comment comment">
+                <h2 class="comment__title">Оставьте ваш комментарий</h2>
+                <form>
+                    <div class="form-col">
+                        <p class="row__text">Показывать ваше имя?</p>
+                        <label for="yes" class="que">Да</label>
+                        <input
+                            type="checkbox"
+                            id="yes"
+                            required
+                        />
+                        <label for="no" class="que">Нет</label>
+                        <input
+                            type="checkbox"
+                            id="no"
+                            required
+                        />
+                    </div>
+                    <div class="form-row">
+                        <label for="fullName" class="row__text"
+                            >Введите ваше
+                            <span class="comment__word">ФИО:</span></label
+                        >
+                        <input type="text" id="fullName" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="link" class="row__text"
+                            >Введите ссылку
+                            <span class="comment__word"
+                                >вашего аватара:</span
+                            ></label
+                        >
+                        <input type="text" id="link" required />
+                    </div>
+                    <div class="form-row">
+                        <p>
+                            <label for="comments" class="row__text"
+                                >Оставьте комментарий:</label
+                            >
+                        </p>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+                    <div class="comment__btn">
+                        <button type="button" class="btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="info__chat chat">
+                <h2 class="chat__title">Чат</h2>
+                <div class="chat__container">
+                    <img src="" alt="" id="chatImage" />
+                    <p id="chatDate"></p>
+                </div>
+                <p id="chatUserName"></p>
+                <p id="chatComment"></p>
+            </div>
+        </section>
+        <script src="./main.js"></script>
+    </body>
+</html>
